@@ -1,0 +1,50 @@
+html, body {
+	font-size: 1.1rem;
+}
+
+h1{
+	padding: 2rem 2rem;
+	flex-basis: 45%;
+	/*color:#3303C2;*/
+	color:#3303C2;
+	font-size: 3rem;
+	text-shadow: 0px 1px #000, -1px 0px #000, 1px 0px #000, 0px -1px #000;
+}
+
+#topnav{
+	flex-basis:50%;
+	padding:3rem 2rem;
+	display:flex;
+	justify-content: right;	
+}
+#topnav ul{ 
+	list-style: none;
+}
+#topnav > ul > li{ /*sino ho posem aixi, amb >, els li de segon nivell tb tindran el float*/
+	float: left;
+	position: relative; /* Wreiteranpassung*/
+}
+#topnav a{
+	color: #ccc;
+	text-decoration: none;
+	background-color: #2E578B; /*#1103FF;*/
+	padding: 1rem 1rem; 
+	display: block; /*aixi agafa els valors que hem donat del padding*/
+}
+#topnav a:hover{
+	color: #E0FFFF;
+}
+
+#topnav > ul >li:hover > ul{ 
+	 display: block;
+}
+#rezeptContainerDetail_flex{
+	display:flex;
+	border-bottom:3px solid #3303C2;
+}
+.imgRezept{
+	width: 400px;
+	height: 300px;
+	border:15px solid white;
+}
+

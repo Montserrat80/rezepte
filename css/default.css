@@ -1,0 +1,403 @@
+*, *:before, *:after{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box; /* padding und border nach innen verlegen (hi ha browsers que sino no funcionarien el paddings i margins*/
+}
+img {
+	max-width: 100%; /*pq la imatge no sigui mai mes gran que l element pare, pero si que pot ser mes petit*/
+	height: auto;
+}
+
+input[id*="checker"]{display: none;   }
+label[for]          {cursor:  pointer;} 
+        
+/* type-Selektoren -----------------------------*/
+
+main{
+	display:block; /* cal posar-ho pq sino el iE11 no reconeix el main com a block !!!*/
+	padding: 3rem;	
+	background-color: #E0FFFF;
+}
+
+header{
+	background-color: #3C71B3;
+	border-bottom: 5px solid #2E578B;
+}
+.imgStart{
+	width:100%;
+	height:100%;
+}
+#headerContainer{
+	display:flex;
+	justify-content: space-between;
+}
+
+
+h2{
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+h3{
+	font-size: 2rem;
+	color:#3303C2;
+	text-align:center;
+}
+h4{
+	font-size: 2rem;
+	text-align:center;
+}
+.begruessen{
+	flex-basis: 15%;
+	padding-top:4rem;
+	font-weight: bold;
+	text-align:center;
+	color:#333;
+}
+.zentrieren{
+	text-align:center;
+}
+.space{
+	margin-left:10px;
+}
+.space2{
+	margin-left:2.5rem;
+}
+
+.abstand{
+	margin: 2rem 0 5px 0;
+}
+.abstand2{
+	margin-top:2rem;
+	padding-top:1rem;
+}
+#headerSuche{
+	flex-basis:25%;
+	padding-top:15px;
+	text-align:center;
+}
+
+footer{
+	margin: 0;
+	padding: 1.5rem;	
+	background-color: #3C71B3;
+	border-top: 1px solid #3303C2;
+}
+.datenInfo{
+	font-size:1.1rem;
+	padding: 10px 40px;
+	width:520px;
+}
+.background1{
+	background-color:#3E9B67;
+}
+.background2{
+	background-color:#3303C2;
+}
+.breite{
+	width:350px;
+	display:inline-block;
+}
+.breite2{
+	width:300px;
+	display:inline-block;
+}
+.simbol{
+	padding-right: 20px;
+}
+
+.saveButton{
+	padding: 3px;
+	border: 2px solid blue;
+	background-color:#3E9B67;
+	
+}
+.fa-save{
+	color:blue;
+	font-size:1.2rem;
+}
+
+#wrapper{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#infoContainer{
+	max-width: 850px;
+	margin: 0 auto;a
+}
+#infoDatenContainer{
+	margin: 1rem 0;
+}
+
+#rezeptWrapper{
+	max-width: 1700px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+#rezeptContainer{
+	/*margin-right: 20px;*/
+	text-align:center;
+}
+
+#rezeptContainer a{
+	color:#555;
+	text-decoration: none;
+}
+#rezeptContainer a:hover{
+	color:#319DE5;
+	text-decoration: underline;
+}
+
+#rezeptContainer .infoRezept{
+	padding-left:15px;
+	width:400px;
+	margin-bottom:2rem;
+	font-size:1.5rem;
+} 
+#rezeptContainerAdmin{
+	border: 5px solid #3303C2;
+	margin: 0 15px 1rem 0;
+}
+#rezeptContainerAdmin .infoRezept{
+	padding-left:10px;
+	width:300px;
+}
+#rezeptContainerAdmin a{
+	color:#555;
+	text-decoration: none;
+}
+#rezeptContainerAdmin a:hover{
+	color:#319DE5;
+	text-decoration: underline;
+}
+#rezeptContainerDetail{
+	max-width: 1000px;
+	margin: 0 auto;
+	border: 5px solid #3303C2;
+	color:#333;
+}
+
+#rezeptContainerDetail .infoRezept{
+	padding-left:15px;
+	padding-right:15px;
+	background-color:#80AAFF;
+	flex-basis:50%;
+}
+#rezeptContainerDetail .infoRezept2{
+	padding:1rem;
+	background-color:#80AAFF;
+	
+}
+.menuartBz{
+	padding:5px;
+	border: 3px solid #3303C2;
+	border-radius: 10% 10%;
+	font-weight:bold;
+}
+
+.menuartBzContainer{
+	margin-bottom:1rem;
+	text-align:center;
+}
+.ueberschrift{
+	margin:5rem 0 1rem 0;
+	font-size:1.3rem;
+	text-align:center;
+	font-weight:bold;
+}
+.ueberschrift2{
+	font-size:1.3rem;
+	font-weight:bold;
+}
+
+.imgRezeptAdmin{
+	width: 300px;
+	height: 200px;
+	border-bottom:2px solid #3303C2;
+}
+.imgRezepDetail{
+	/*width: 600px;
+	height: 400px;*/
+	vertical-align:middle;
+}
+.imgKlein{
+	width: 200px;
+}
+.rezeptBz{
+	font-size:2rem;
+	color:#3303C2;
+	font-weight:bold;
+	margin:2rem 0;
+	text-align:center;
+}
+input[type="submit"], button{
+    line-height: 35px;
+    font-size: 1.1rem;
+	color:#CCC;
+    background: #2E578B;
+    border:2px solid rgb(13, 73, 39);
+    margin: 1rem 0;
+	padding: 2px 5px;
+}
+input[type="submit"]:hover, button:hover{
+    color:#2E578B;
+    background:#CCC;  /*rgb(13, 73, 39)*/
+}
+.flex
+{
+	display: flex;
+}
+.zutatenContainer{
+	max-width: 800px;
+	margin: 0 auto;
+	padding:1rem 0;
+	border-top: 5px solid #3303C2;
+	border-bottom: 5px solid #3303C2;
+	display: flex;
+	justify-content:space-between;
+}
+.mengeEinheitContainer{
+	flex-basis:49%;
+	text-align:right;
+}
+.zutatenBzContainer{
+	flex-basis:50%;
+}
+#zutatenWrapper{
+	background-color:#3303C2;
+	padding:10px;
+	border: 1px solid;
+	margin:1rem 0;
+}
+.zutatenContainerNeu{
+	display: flex;
+	justify-content:space-between;
+}
+.mengeContainerNeu{
+	flex-basis:19%;
+}
+.einheitContainerNeu{
+	flex-basis:19%;
+}
+.zutatenBzContainerNeu{
+	flex-basis:59%;
+}
+
+.cFeld{
+	margin: 10px 0;
+    background:rgb(224, 243, 232);
+    border:none;
+    border-bottom: 1px solid rgb(13, 73, 39); 
+    width: 300px; 
+    outline: none; 
+	font-size: 1.1rem;   
+	border-radius: 2px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25) inset;
+    border: 1px solid lightblue;
+}
+
+.meldung{
+	color:red;
+	font-weight:bold;
+	margin:1rem 0;
+}
+.meldung2{
+	color:red;
+	font-weight:bold;
+	font-size:2rem;
+	margin:3rem 0;
+}
+.frage{
+	margin: 2rem 0;
+}
+
+.linkButton{
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+	padding:8px;
+	border: 1px solid blue;
+	margin-right: 20px;
+}
+.linkButton2{
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+	padding:8px;
+	border: 1px solid blue;
+	margin-right: 20px;
+	font-size:2rem;
+}
+.bemerkung{
+	color:#555;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+#rezeptFormular{
+	border: 3px solid #3303C2;
+	padding: 1rem;
+}
+#rezeptFormular label{
+	color:#555;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+#rezeptFormular input[type="text"], 
+input[type="number"],
+textarea, select{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(162,152,20);
+    font: 0.8rem Verdana, sans-serif;
+    width: 80%; /*aixi tots els inputs tenen la mateixa longitud*/
+    outline: none; /*aquestes linies les veiem amb chrome*/
+    padding: 5px;
+    margin-bottom: 12px;
+	/*background: rgb(224, 243, 232);
+	background: rgb(224, 354, 232);*/
+}
+#rezeptFormular #kleinFormFeld{
+	 width: 100px;
+}
+/*
+#rezeptFormular textarea{
+    width: 800px; 
+}
+*/
+#rezeptFormular input[type="text"]:focus, textarea:focus{
+    background: rgb(324, 343, 332);
+	/*background: rgb(204, 223, 212);*/
+	 background: rgb(324, 465, 332);
+}
+
+footer a{
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+	padding-right:8px;
+}
+footer a:hover
+{
+	color: white;
+}
+.links{
+	display:inline-block;
+	width:48%;
+}
+.rechts{
+	width:50%;
+	display:inline-block;
+	text-align:right;
+}
+.tabLinks{
+	margin-left: 2rem;
+}
+
+.clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+}
+
+
