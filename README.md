@@ -20,3 +20,11 @@
 ![bearbeiten](https://user-images.githubusercontent.com/81353824/113752708-9085f800-970d-11eb-814a-d1ada0c54f64.png)
 
 ![loeschen](https://user-images.githubusercontent.com/81353824/113752729-954aac00-970d-11eb-9a3c-14b50eedf584.png)
+
+## Responsive Web-Design
+
+![responsive1](https://user-images.githubusercontent.com/81353824/114018733-dbb71c80-986d-11eb-80d9-c3b77440d398.png)
+
+![responsive2](https://user-images.githubusercontent.com/81353824/114018744-de197680-986d-11eb-95f8-e55cfb2c0bd6.png)
+
+![responsive3](https://user-images.githubusercontent.com/81353824/114018748-de197680-986d-11eb-83d8-da7cba7a5af3.png)
